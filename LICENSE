@@ -1,0 +1,47 @@
+Softwyx SPT Mod Template License 1.0
+====================================
+
+Copyright (c) Softwyx
+
+This license applies only to files that originate from the Softwyx SPT Mod Template
+("Template Files"), including copies and modifications of those files. It does not
+apply to code you write yourself in a project started from this template.
+
+## Template Files
+
+Template Files are the files shipped in this repository under `template/` and the
+shared tooling at the repository root (`scripts/`, `New-SptMod.ps1`, root `LICENSE`,
+`TEMPLATE-ATTRIBUTION.md`, `.editorconfig`, `.gitattributes`, `qodana.yaml`, and
+similar scaffolding). If you are unsure whether a file is a Template File, treat
+files you did not author from scratch as Template Files unless you replaced them
+entirely.
+
+## Your project
+
+You may license your own new files and your mod as a whole under any terms you
+choose. You are not required to ship this LICENSE with your mod or paste it into
+player releases.
+
+## What you must do
+
+Keep TEMPLATE-ATTRIBUTION.md in your repository and mention in your README that
+the project was created using the Softwyx SPT Mod Template (see that file for
+wording). Include TEMPLATE-ATTRIBUTION.md in release archives and in the BepInEx
+plugin folder when you distribute builds.
+
+## Template Files — permissions
+
+You may use, modify, and redistribute Template Files as part of your mod subject to:
+
+1. The attribution rules in TEMPLATE-ATTRIBUTION.md.
+2. This license continuing to apply to those Template Files and your modifications
+   to them.
+
+## No warranty
+
+TEMPLATE FILES ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+TEMPLATE FILES OR THE USE OR OTHER DEALINGS IN THE TEMPLATE FILES.

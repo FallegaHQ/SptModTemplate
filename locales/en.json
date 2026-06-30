@@ -1,0 +1,5 @@
+{
+    "sptmodtemplate_welcome_title": "Spt Mod Template",
+    "sptmodtemplate_welcome_body": "This example mod is running (v{0}).\n\nGame locale example — map id \"bigmap\" displays as \"{1}\".\n\nReplace this dialog in Core/ModLifecycle.cs and add keys under locales/.",
+    "sptmodtemplate_example_map_fallback": "Unknown map"
+}

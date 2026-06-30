@@ -1,0 +1,26 @@
+<Project>
+    <PropertyGroup>
+        <!-- Override in Directory.Build.props.user if your install path differs -->
+        <TarkovDir Condition="'$(TarkovDir)' == ''">D:\Games\Escape from Tarkov</TarkovDir>
+        <TarkovManagedDir>$(TarkovDir)\EscapeFromTarkov_Data\Managed</TarkovManagedDir>
+        <TarkovBepInExDir>$(TarkovDir)\BepInEx</TarkovBepInExDir>
+        <TarkovPluginsDir>$(TarkovBepInExDir)\plugins</TarkovPluginsDir>
+    </PropertyGroup>
+
+    <!-- Authenticode signing (opt-in). Secrets/paths belong in Directory.Build.props.user only. -->
+    <PropertyGroup>
+        <!-- true by default; Release/Package only (see SignAssemblyConfigurations). Set false in .user to skip. -->
+        <SignAssembly Condition="'$(SignAssembly)' == ''">true</SignAssembly>
+        <SignAssemblyConfigurations Condition="'$(SignAssemblyConfigurations)' == ''">Release;Package</SignAssemblyConfigurations>
+        <SigningCertSubject Condition="'$(SigningCertSubject)' == ''">CN=Softwyx.SptModTemplate</SigningCertSubject>
+        <SigningCertStore Condition="'$(SigningCertStore)' == ''">Cert:\CurrentUser\My</SigningCertStore>
+        <SigningPfxPath Condition="'$(SigningPfxPath)' == ''"/>
+        <SigningPfxPassword Condition="'$(SigningPfxPassword)' == ''"/>
+        <SigningPfxExportPath Condition="'$(SigningPfxExportPath)' == ''"/>
+        <SigningTimestampUrl Condition="'$(SigningTimestampUrl)' == ''">http://timestamp.digicert.com</SigningTimestampUrl>
+        <SigningScriptPath Condition="'$(SigningScriptPath)' == ''">$(MSBuildThisFileDirectory)scripts\SignAssembly.ps1</SigningScriptPath>
+    </PropertyGroup>
+
+    <Import Project="$(MSBuildThisFileDirectory)Directory.Build.props.user"
+            Condition="Exists('$(MSBuildThisFileDirectory)Directory.Build.props.user')"/>
+</Project>
